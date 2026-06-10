@@ -60,7 +60,7 @@ node
 
       curl -u kk:password \
 --upload-file /var/lib/jenkins/workspace/webapp-Scripted-Way-PL/target/maven-web-application.war \
-"http://3.108.62.23:8080/manager/text/deploy?path=/maven-web-application&update=true"
+"http://13.233.87.148:8080/manager/text/deploy?path=/maven-web-application&update=true"
           
         """
     }
