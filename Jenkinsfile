@@ -2,12 +2,6 @@
 
 node
 {
-     properties([
-        pipelineTriggers([
-            pollSCM('* * * * *')
-        ])
-    ])
-
 
 def mavenHome= tool name: "maven-3.9.0"
 echo "git branch Name: ${env.BRANCH_NAME}"
@@ -67,7 +61,7 @@ echo "build number: ${env.BUILD_NUMBER}"
 
       curl -u kk:password \
 --upload-file /var/lib/jenkins/workspace/webapp-Scripted-Way-PL/target/maven-web-application.war \
-"http://13.233.87.148:8080/manager/text/deploy?path=/maven-web-application&update=true"
+"http://52.66.203.242:8080/manager/text/deploy?path=/maven-web-application&update=true"
           
         """
     }
